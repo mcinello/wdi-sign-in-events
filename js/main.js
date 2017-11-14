@@ -18,11 +18,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
   submit.addEventListener('click', function(e) {
     inputs.forEach(function(input) {
-	     input.className = 'error';
-    })
+	     input.classList.add('error');
+    });
   });
 
-  // 'mousedown',
+    inputs.forEach(function(input) {
+      input.addEventListener('focus', function(e){
+        input.classList.remove('error');
+      });
+    });
 
 });
 
