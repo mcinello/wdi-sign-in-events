@@ -3,9 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var signIn = document.querySelector('.signin');
   var close = document.querySelector('.close');
   var submit = document.querySelector('.submit');
-  // var error = document.querySelector('.error');
   var modal = document.querySelector('.modal');
-  var button = document.querySelector('button');
   var inputs = document.querySelectorAll('input');
 
   signIn.addEventListener('click', function(e) {
